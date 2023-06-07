@@ -1,29 +1,44 @@
 @font-face {
-    font-family: "Geologica-Regular";
-    src: url("./../assets/fonts/Geologica-Regular.ttf");
+    font-weight: 400;
+    font-family: "TTCommons-Regular";
+    src: url("./../assets/fonts/TTCommons-Regular.ttf");
 }
 
 @font-face {
-    font-family: "TTCommons-Regular.ttf";
-    src: url("./../assets/fonts/TTCommons-Regular.ttf");
+    font-weight: 300;
+    font-family: "TTCommons-Light";
+    src: url("./../assets/fonts/TTCommons-Light.ttf");
+}
+
+@font-face {
+    font-family: "Geologica-Regular";
+    src: url("./../assets/fonts/Geologica-Regular.ttf");
 }
 
 body {
     width: 100%;
     color: #fff;
-    font-size: 1em;
-    line-height: 1.2;
+    font-size: 20px;
+    line-height: 24px;
     font-weight: 400;
-    font-family: "Geologica-Regular";
+    letter-spacing: -0.01em;
+    font-family: "TTCommons-Light";
     background-color: #000;
 }
 
 .container {
-    width: 100%;
+    margin: 40px 39px 49px 40px;
+    display: flex;
+    gap: 31px;
+}
+
+.contacts {
+    width: 322px;
+    height: 780px;
 }
 
 .photo {
-    width: 322px;
+    width: 100%;
     height: 355px;
 }
 
@@ -35,20 +50,66 @@ body {
 
 .contacts-description {
     background-color: #F51B1B;
+    padding: 40px 73px 158px 24px;
 }
 
-.phone {
-    list-style-image: url('./../assets/icons/phone-call.png');
+.contacts-main {
+    width: 100%;
+    margin-bottom: 40px;
 }
 
-.email {
-    list-style-image: url('./../assets/icons/email.png');
+.contacts-name {
+    font-family: "Geologica-Regular";
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
 }
 
-.telegram {
-    list-style-image: url('./../assets/icons/telegram.png');
+.contacts-age {
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
 }
 
-.github {
-    list-style-image: url('./../assets/icons/github.png');
+.contacts-links li {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.contact-info {
+    list-style: none;
+}
+
+.contact-info:before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-right: 18px;
+    margin-left: -32px;
+    vertical-align: middle;
+    background-size: cover;
+}
+
+.phone:before {
+    background-image: url('./../assets/icons/phone-call.png');
+}
+
+.email:before {
+    background-image: url('./../assets/icons/email.png');
+}
+
+.telegram:before {
+    background-image: url('./../assets/icons/telegram.png');
+}
+
+.github:before {
+    background-image: url('./../assets/icons/github.png');
+}
+
+.github a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
 }
