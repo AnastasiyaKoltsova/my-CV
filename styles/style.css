@@ -24,12 +24,16 @@ body {
     letter-spacing: -0.01em;
     font-family: "TTCommons-Light";
     background-color: #000;
+    overflow-x: hidden;
 }
 
 .container {
-    margin: 40px 39px 49px 40px;
+    padding: 40px;
     display: flex;
     gap: 31px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h2 {
